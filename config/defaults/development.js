@@ -7,6 +7,9 @@ module.exports = {
     googleAnalyticsTrackingID: 'WAOS_NODE_app_googleAnalyticsTrackingID',
     contact: 'waos.me@gmail.com',
   },
+  swagger: {
+    yaml: '',
+  },
   api: {
     protocol: 'http',
     port: 3000,
