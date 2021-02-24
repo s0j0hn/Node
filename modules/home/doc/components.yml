@@ -1,0 +1,6 @@
+components:
+  schemas:
+    homeTeam:
+      properties:
+        name:
+          type: string
