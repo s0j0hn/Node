@@ -2,5 +2,11 @@ components:
   schemas:
     homeTeam:
       properties:
-        name:
+        type:
           type: string
+        message:
+          type: string
+        data:
+          type: array
+          items:
+            type: object
