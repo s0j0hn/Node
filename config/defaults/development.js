@@ -12,7 +12,6 @@ module.exports = {
     options: {
       swaggerUrl: '/api/docs/swagger.yml',
       explore: true,
-      customCss: '.swagger-ui .topbar { display: none }',
     },
   },
   api: {
