@@ -8,12 +8,10 @@ paths:
       security:
         - bearerAuth: []
       responses:
-        '200':
-          description: List
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/homeTeam'
+        '201':
+          description: Created
+          schema:
+            $ref: '#/components/schemas/homeTeam'
         '400':
           description: Invalid request
         '401':

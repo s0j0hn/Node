@@ -8,11 +8,7 @@ module.exports = {
     contact: 'waos.me@gmail.com',
   },
   swagger: {
-    enable: true,
-    options: {
-      swaggerUrl: '/api/docs/swagger.yml',
-      explore: true,
-    },
+    yaml: '',
   },
   api: {
     protocol: 'http',
