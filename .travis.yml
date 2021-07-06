@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 14
+  - 15
 os:
   - linux
 cache:
@@ -13,11 +13,12 @@ install:
 before_script:
   - npm rebuild bcrypt --update-binary
 after_success:
+  - npm run test:lint
   - npm run test:coveralls
 jobs:
   include:
     - stage: allow_failures
-      node_js: 15
+      node_js: 16
 #  - stage: deploy
 #    node_js: lts/*
 #    deploy:

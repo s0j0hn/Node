@@ -8,9 +8,7 @@ const GoogleStrategy = require('passport-google-oauth20');
 const config = require(path.resolve('./config'));
 const auth = require('../../controllers/auth.controller');
 
-const callbackURL = `${config.api.protocol}://${config.api.host}${
-  config.api.port ? ':' : ''
-}${config.api.port ? config.api.port : ''}/${
+const callbackURL = `${config.api.protocol}://${config.api.host}${config.api.port ? ':' : ''}${config.api.port ? config.api.port : ''}/${
   config.api.base
 }/auth/google/callback`;
 

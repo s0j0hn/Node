@@ -1,8 +1,7 @@
 module.exports = {
   app: {
     title: 'WeAreOpenSource Node - Development Environment',
-    description:
-      'Node - Boilerplate Back : Express, Jwt, Mongo, Sequelize (Beta) ',
+    description: 'Node - Boilerplate Back : Express, Jwt, Mongo, Sequelize (Beta) ',
     keywords: 'node, express, mongo, jwt, sequelize, stack, boilerplate',
     googleAnalyticsTrackingID: 'WAOS_NODE_app_googleAnalyticsTrackingID',
     contact: 'waos.me@gmail.com',
@@ -56,8 +55,7 @@ module.exports = {
     // logging with Morgan - https://github.com/expressjs/morgan
     // Can specify one of 'combined', 'common', 'dev', 'short', 'tiny', 'custom'
     format: 'custom',
-    pattern:
-      ':id :email :method :url :status :response-time ms - :res[content-length]', // only for custom format
+    pattern: ':id :email :method :url :status :response-time ms - :res[content-length]', // only for custom format
     fileLogger: {
       directoryPath: process.cwd(),
       fileName: 'app.log',
@@ -85,6 +83,9 @@ module.exports = {
     xframe: 'SAMEORIGIN',
     p3p: 'ABCDEF',
     xssProtection: true,
+  },
+  bodyParser: {
+    limit: '500kb',
   },
   cors: {
     origin: ['http://localhost:8080'],
@@ -158,13 +159,7 @@ module.exports = {
   },
   // zxcvbn is used to manage password security
   zxcvbn: {
-    forbiddenPasswords: [
-      '12345678',
-      'azertyui',
-      'qwertyui',
-      'azertyuiop',
-      'qwertyuiop',
-    ], // passwords forbidden
+    forbiddenPasswords: ['12345678', 'azertyui', 'qwertyui', 'azertyuiop', 'qwertyuiop'], // passwords forbidden
     minSize: 8, // min password size
     maxSize: 126, // max password size
     minimumScore: 3, // min password complexity score
