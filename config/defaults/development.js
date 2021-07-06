@@ -8,7 +8,11 @@ module.exports = {
     contact: 'waos.me@gmail.com',
   },
   swagger: {
-    yaml: '',
+    enable: true,
+    options: {
+      swaggerUrl: '/api/docs/swagger.yml',
+      explore: true,
+    },
   },
   api: {
     protocol: 'http',
@@ -40,7 +44,6 @@ module.exports = {
       sslPass: '1234'
       */
     },
-    promise: global.Promise,
     restoreExceptions: [], // collections exceptions for db restore : npm run seed:mongorestore
   },
   // SSL on express server (FYI : Wiki)
